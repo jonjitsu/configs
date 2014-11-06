@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-install_location=$HOME/.config/pentadactylrc
+install_dir=$HOME/.config/pentadacty
+
 
 if [ ! -f "rc" ]
 then
@@ -8,7 +9,8 @@ then
 	exit 1
 fi
 
-ln -sf $(readlink -f rc)  "$install_location"
+mkdir -p "$install_dir"
+ln -sf $(readlink -f rc)  "$install_dir"/rc
 
 echo "add to your bashrc/zshrc:"
-echo 'export PENTADACTYL_INIT=":source '$install_location'"'
+echo 'export PENTADACTYL_INIT=":source '$install_dir'/rc"'
