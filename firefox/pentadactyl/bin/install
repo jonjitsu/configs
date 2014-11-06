@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+install_location=$HOME/.config/pentadactylrc
+
+if [ ! -f "rc" ]
+then
+	echo "Can't find rc file."
+	exit 1
+fi
+
+ln -sf $(readlink -f rc)  "$install_location"
+
+echo "add to your bashrc/zshrc:"
+echo 'export PENTADACTYL_INIT=":source '$install_location'"'

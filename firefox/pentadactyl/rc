@@ -1,0 +1,8 @@
+"hg7127
+
+loadplugins '\.(js|penta)$'
+group user
+map -count -modes=n,v ts <count>:tab<Space>open<Space>google<Space>
+set guioptions=T
+
+" vim: set ft=pentadactyl:

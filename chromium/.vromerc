@@ -1,5 +1,10 @@
 
 
+" customize next/prev page pattern
+set nextpattern=["Next Page", "^\\s*Next\\s*$", "^>$", "^More$", "(^(>>|››|»)\\|?)|((»|››|>>)\\|?$)"]
+set previouspattern=["Previous Page", "^\\s*Prev(ious)?\\s*$", "^<$", "(^(<<|‹‹|«)\\|?)|((<<|‹‹|«)\\|?$)"]
+
+
 set autocomplete_prev=<C-p>
 set autocomplete_next=<C-n>
 set autocomplete_prev_10=<Up>
