@@ -1,0 +1,6 @@
+
+
+set autocomplete_prev=<C-p>
+set autocomplete_next=<C-n>
+set autocomplete_prev_10=<Up>
+set autocomplete_next_10=<Down>
